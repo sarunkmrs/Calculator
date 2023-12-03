@@ -7,8 +7,40 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="test">
-        <button type="button" name="add" id="addBtn">Add Button</button>
-    </div>
+    <table class="calculator" >
+        <tr>
+          <td colspan="3"> <input class="display-box" type="text" id="result"  value="0" disabled /> </td>
+       
+          <!-- clearScreen() function clears all the values -->
+          <td> <input type="button" value="C" id="clearBtn" /> </td>
+        </tr>
+        <tr>
+          <!-- display() function displays the value of clicked button -->
+          <td> <input type="button" value="1" id="one" class="number" /> </td>
+          <td> <input type="button" value="2" id="two" class="number" /> </td>
+          <td> <input type="button" value="3" id="three" class="number" /> </td>
+          <td> <input type="button" value="/" id="divBtn" class="operator" /> </td>
+        </tr>
+        <tr>
+          <td> <input type="button" value="4" id="four" class="number" /> </td>
+          <td> <input type="button" value="5" id="five" class="number" /> </td>
+          <td> <input type="button" value="6" id="six" class="number" /> </td>
+          <td> <input type="button" value="-" id="subBtn" class="operator" /> </td>
+        </tr>
+        <tr>
+          <td> <input type="button" value="7" id="seven" class="number" /> </td>
+          <td> <input type="button" value="8" id="eight" class="number" /> </td>
+          <td> <input type="button" value="9" id="nine" class="number" /> </td>
+          <td> <input type="button" value="+" id="addBtn" class="operator"/> </td>
+        </tr>
+        <tr>
+          <td> <input type="button" value="." id="point" class="operator" /> </td>
+          <td> <input type="button" value="0" id="zero" class="number" /> </td>
+       
+          <!-- calculate() function evaluates the mathematical expression -->
+          <td> <input type="button" value="=" id="equBtn" class="operator" /> </td>
+          <td> <input type="button" value="*" id="mulBtn" class="operator" /> </td>
+        </tr>
+      </table>
 </body>
 </html>
